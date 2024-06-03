@@ -1,5 +1,5 @@
 {
-  "name": "@fork-cells/page-controller",
+  "name": "@andresbitrian/page-controller",
   "version": "1.0.0",
   "scripts": {
     "build": "echo \"Building page...\""
@@ -15,7 +15,7 @@
   ],
   "main": "index.js",
   "dependencies": {
-    "@fork-cells/element-controller": "^1.0.0"
+    "@andresbitrian/element-controller": "^1.0.0"
   },
   "description": "",
   "publishConfig": {

@@ -1,7 +1,7 @@
-import { startApp } from '@fork-cells/core';
+import { startApp } from '@andresbitrian/core';
 import { LitElement, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import { ElementController } from '@fork-cells/element-controller';
+import { ElementController } from '@andresbitrian/element-controller';
 import { routes } from '../router/routes.js';
 import { styles } from './app-index.css.js';
 

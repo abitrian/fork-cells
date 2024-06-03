@@ -1,4 +1,4 @@
-# @fork-cells/core
+# @andresbitrian/core
 
 ## 1.0.0
 

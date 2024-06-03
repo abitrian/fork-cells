@@ -1,4 +1,4 @@
-# @fork-cells/element-controller
+# @andresbitrian/element-controller
 
 ## 1.0.0
 
@@ -9,4 +9,4 @@
 ### Patch Changes
 
 - Updated dependencies [1049a6c]
-  - @fork-cells/core-plugin@1.1.0
+  - @andresbitrian/core-plugin@1.1.0

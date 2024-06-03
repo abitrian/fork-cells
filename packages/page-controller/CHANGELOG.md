@@ -1,4 +1,4 @@
-# @fork-cells/page-controller
+# @andresbitrian/page-controller
 
 ## 1.0.0
 
@@ -9,4 +9,4 @@
 ### Patch Changes
 
 - Updated dependencies [1049a6c]
-  - @fork-cells/element-controller@1.0.0
+  - @andresbitrian/element-controller@1.0.0

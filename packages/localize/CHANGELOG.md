@@ -1,4 +1,4 @@
-# @fork-cells/localize
+# @andresbitrian/localize
 
 ## 1.1.0
 

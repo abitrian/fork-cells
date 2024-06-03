@@ -1,5 +1,5 @@
 {
-  "name": "@fork-cells/page-mixin",
+  "name": "@andresbitrian/page-mixin",
   "version": "1.1.0",
   "description": "",
   "files": [
@@ -8,7 +8,7 @@
   ],
   "main": "index.js",
   "dependencies": {
-    "@fork-cells/core-plugin": "^1.1.0",
+    "@andresbitrian/core-plugin": "^1.1.0",
     "@open-wc/dedupe-mixin": "^1.4.0"
   },
   "devDependencies": {

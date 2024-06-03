@@ -1,6 +1,6 @@
 import { html, LitElement, nothing } from 'lit';
-import { PageController } from '@fork-cells/page-controller';
-import { PageTransitionsMixin } from '@fork-cells/page-transitions';
+import { PageController } from '@andresbitrian/page-controller';
+import { PageTransitionsMixin } from '@andresbitrian/page-transitions';
 import { customElement, state, property } from 'lit/decorators.js';
 import { getMealDetailsById } from '../../components/meals.js';
 import '@material/web/button/outlined-button.js';

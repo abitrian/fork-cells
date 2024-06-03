@@ -1,4 +1,4 @@
-import { RouteDefinition } from '@fork-cells/core/types'; // Import the missing 'RouteDefinition' type
+import { RouteDefinition } from '@andresbitrian/core/types'; // Import the missing 'RouteDefinition' type
 
 export const routes: RouteDefinition[] = [
   {

@@ -1,4 +1,4 @@
-import { getConfig } from '@fork-cells/core';
+import { getConfig } from '@andresbitrian/core';
 
 const {
   appConfig: {

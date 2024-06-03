@@ -27,7 +27,7 @@ In this mono repo we have the modules that builds up Open Cells:
 To create an application with Open Cells run:
 
 ```bash
-npx @fork-cells/create-app
+npx @andresbitrian/create-app
 ```
 
 You will be asked to enter a name for the application and once you confirm it a folder will be created with the application inside.
@@ -86,7 +86,7 @@ The `index.html` file is the document in which the app will be mounted on. Its b
 The `src/components/app-index.ts` file includes the imports of Open Cells core library and the app initialization.
 
 ```js
-import { startApp } from '@fork-cells/core';
+import { startApp } from '@andresbitrian/core';
 import { routes } from '../router/routes.js';
 
 startApp({

@@ -40,7 +40,7 @@ import { intlState } from '../config-state.js';
  *
  * ```js
  * import { LitElement, html } from 'lit';
- * import { t, updateWhenLocaleResourcesChange } from '@fork-cells/localize';
+ * import { t, updateWhenLocaleResourcesChange } from '@andresbitrian/localize';
  *
  * class ExampleComponent extends LitElement {
  *   constructor() {
@@ -195,7 +195,7 @@ import { intlState } from '../config-state.js';
  *
  * ```js
  * import { LitElement, html } from 'lit';
- * import { LocalizeMixin } from '@fork-cells/localize';
+ * import { LocalizeMixin } from '@andresbitrian/localize';
  *
  * class ExampleComponent extends LocalizeMixin(LitElement) {
  *   render() {
@@ -208,7 +208,7 @@ import { intlState } from '../config-state.js';
  *
  * ```js
  * import { LitElement, html } from 'lit';
- * import { LocalizeMixin, t } from '@fork-cells/localize';
+ * import { LocalizeMixin, t } from '@andresbitrian/localize';
  *
  * class ExampleComponent extends LocalizeMixin(LitElement) {
  *   render() {
@@ -223,7 +223,7 @@ import { intlState } from '../config-state.js';
  *
  * ```js
  * import { LitElement, html } from 'lit';
- * import { LocalizeMixin } from '@fork-cells/localize';
+ * import { LocalizeMixin } from '@andresbitrian/localize';
  *
  * class ExampleComponent extends LocalizeMixin(LitElement) {
  *   willUpdate(props) {
@@ -254,7 +254,7 @@ import { intlState } from '../config-state.js';
  * `document.documentElement.lang` attribute.
  *
  * ```js
- * import { setLang } from '@fork-cells/localize';
+ * import { setLang } from '@andresbitrian/localize';
  *
  * setLang('es-ES');
  * ```
@@ -271,7 +271,7 @@ import { intlState } from '../config-state.js';
  * `setFormats` allows to set formats for Intl MessageFormat.
  *
  * ```js
- * import { setFormats } from '@fork-cells/localize';
+ * import { setFormats } from '@andresbitrian/localize';
  *
  * setFormats({
  *   number: {
@@ -289,7 +289,7 @@ import { intlState } from '../config-state.js';
  * translations in your app.
  *
  * ```js
- * import { setWarnOnMissingKeys } from '@fork-cells/localize';
+ * import { setWarnOnMissingKeys } from '@andresbitrian/localize';
  *
  * setWarnOnMissingKeys(true);
  * ```
@@ -306,7 +306,7 @@ import { intlState } from '../config-state.js';
  * fetch them.
  *
  * ```js
- * import { setUrl, setLocalesHost, requestResources } from '@fork-cells/localize';
+ * import { setUrl, setLocalesHost, requestResources } from '@andresbitrian/localize';
  *
  * setLocalesHost('base/path/for/app');
  * setUrl('locales/app-locales.json');
@@ -333,7 +333,7 @@ import { intlState } from '../config-state.js';
  *   setLocalesHost,
  *   requestResources,
  *   setUseBundles,
- * } from '@fork-cells/localize';
+ * } from '@andresbitrian/localize';
  *
  * setUseBundles(true);
  * setLocalesHost('base/path/for/app');

@@ -1,4 +1,4 @@
-import { CoreAPI } from '@fork-cells/core-plugin/types';
+import { CoreAPI } from '@andresbitrian/core-plugin/types';
 
 export declare class ElementController implements CoreAPI {
   constructor(host: any);

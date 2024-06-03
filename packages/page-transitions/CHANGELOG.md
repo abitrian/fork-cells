@@ -1,4 +1,4 @@
-# @fork-cells/page-transitions
+# @andresbitrian/page-transitions
 
 ## 1.0.0
 

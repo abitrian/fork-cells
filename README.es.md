@@ -28,7 +28,7 @@ En este mono repo están los módulos que forman Open Cells:
 Para crear una aplicación con Open Cells ejecuta:
 
 ```bash
-npx @fork-cells/create-app
+npx @andresbitrian/create-app
 ```
 
 Te pedirá que le des un nombre para la aplicación y te pedirá confirmar.
@@ -56,7 +56,7 @@ Open Cells no requiere una estructura de directorios específica, pero necesita 
 - una configuración de rutas
 - componentes web que actúen como páginas
 
-La aplicación que se crea con `npm init @fork-cells/app` da como sugerencia la siguiente estructura:
+La aplicación que se crea con `npm init @andresbitrian/app` da como sugerencia la siguiente estructura:
 
 ```treeview
 Root Directory/
@@ -89,7 +89,7 @@ El documento en el que se montará la app es `index.html`. En su body, contiene 
 El fichero `src/components/app-index.ts` incluye los imports del core de Open Cells y la inicialización de la aplicación.
 
 ```js
-import { startApp } from '@fork-cells/core';
+import { startApp } from '@andresbitrian/core';
 import { routes } from '../router/routes.js';
 
 startApp({

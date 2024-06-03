@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { plugCellsCore } from '@fork-cells/core-plugin';
+import { plugCellsCore } from '@andresbitrian/core-plugin';
 import { dedupeMixin } from '@open-wc/dedupe-mixin';
 
 const PageMixinImpl = base => {

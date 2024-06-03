@@ -1,5 +1,5 @@
 import { html, LitElement } from 'lit';
-import { PageTransitionsMixin } from '@fork-cells/page-transitions';
+import { PageTransitionsMixin } from '@andresbitrian/page-transitions';
 import { customElement, state } from 'lit/decorators.js';
 import { map } from 'lit/directives/map.js';
 import { getRandomMeal, getAllCategories } from '../../components/meals.js';
@@ -11,7 +11,7 @@ import '@material/web/list/list-item.js';
 import '@material/web/list/list.js';
 import '../../components/page-layout.js';
 import { PageLayout } from '../../components/page-layout.js';
-import { PageMixin } from '@fork-cells/page-mixin';
+import { PageMixin } from '@andresbitrian/page-mixin';
 
 // @ts-ignore
 @customElement('home-page')

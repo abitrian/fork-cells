@@ -1,5 +1,5 @@
 {
-  "name": "@fork-cells/element-controller",
+  "name": "@andresbitrian/element-controller",
   "version": "1.0.0",
   "main": "index.js",
   "types": "types/index.d.ts",
@@ -11,7 +11,7 @@
   "license": "Apache-2.0",
   "description": "",
   "dependencies": {
-    "@fork-cells/core-plugin": "^1.1.0"
+    "@andresbitrian/core-plugin": "^1.1.0"
   },
   "files": [
     "/src/",

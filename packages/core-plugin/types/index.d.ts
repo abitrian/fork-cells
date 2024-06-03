@@ -1,4 +1,4 @@
-import { RouteData } from '@fork-cells/core/types';
+import { RouteData } from '@andresbitrian/core/types';
 
 export interface CoreAPI {
   constructor(host: any);

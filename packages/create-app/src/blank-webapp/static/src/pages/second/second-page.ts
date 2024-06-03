@@ -1,5 +1,5 @@
 import { html, LitElement } from 'lit';
-import { PageController } from '@fork-cells/page-controller';
+import { PageController } from '@andresbitrian/page-controller';
 import { customElement } from 'lit/decorators.js';
 
 @customElement('second-page')

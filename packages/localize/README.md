@@ -1,4 +1,4 @@
-# @fork-cells/localize
+# @andresbitrian/localize
 
 ## Package info
 
@@ -7,7 +7,7 @@
 Installation using NPM
 
 ```bash
-npm install @fork-cells/localize
+npm install @andresbitrian/localize
 ```
 
 ### Entry points & exports
@@ -41,7 +41,7 @@ Import and add the mixin to a class:
 
 ```js
 import { LitElement } from 'lit';
-import { LocalizeMixin } from '@fork-cells/localize';
+import { LocalizeMixin } from '@andresbitrian/localize';
 
 class ExampleElement extends LocalizeMixin(LitElement) {
   ...
@@ -71,7 +71,7 @@ module and used wherever needed. Example:
 
 ```js
 import { LitElement, html } from 'lit';
-import { t, updateWhenLocaleResourcesChange } from '@fork-cells/localize';
+import { t, updateWhenLocaleResourcesChange } from '@andresbitrian/localize';
 
 class ExampleComponent extends LitElement {
   constructor() {
@@ -226,7 +226,7 @@ Example:
 
 ```js
 import { LitElement, html } from 'lit';
-import { LocalizeMixin } from '@fork-cells/localize';
+import { LocalizeMixin } from '@andresbitrian/localize';
 
 class ExampleComponent extends LocalizeMixin(LitElement) {
   render() {
@@ -239,7 +239,7 @@ You can also combine the mixin with the imported `t` method:
 
 ```js
 import { LitElement, html } from 'lit';
-import { LocalizeMixin, t } from '@fork-cells/localize';
+import { LocalizeMixin, t } from '@andresbitrian/localize';
 
 class ExampleComponent extends LocalizeMixin(LitElement) {
   render() {
@@ -254,7 +254,7 @@ configuration in the component. Example:
 
 ```js
 import { LitElement, html } from 'lit';
-import { LocalizeMixin } from '@fork-cells/localize';
+import { LocalizeMixin } from '@andresbitrian/localize';
 
 class ExampleComponent extends LocalizeMixin(LitElement) {
   willUpdate(props) {
@@ -285,7 +285,7 @@ managing and updating the configuration.
 `document.documentElement.lang` attribute.
 
 ```js
-import { setLang } from '@fork-cells/localize';
+import { setLang } from '@andresbitrian/localize';
 
 setLang('es-ES');
 ```
@@ -302,7 +302,7 @@ language in your application, you can just set that attribute. For example:
 `setFormats` allows to set formats for Intl MessageFormat.
 
 ```js
-import { setFormats } from '@fork-cells/localize';
+import { setFormats } from '@andresbitrian/localize';
 
 setFormats({
   number: {
@@ -320,7 +320,7 @@ not found in the locale resources. This can be useful for debugging, in order to
 translations in your app.
 
 ```js
-import { setWarnOnMissingKeys } from '@fork-cells/localize';
+import { setWarnOnMissingKeys } from '@andresbitrian/localize';
 
 setWarnOnMissingKeys(true);
 ```
@@ -337,7 +337,7 @@ modify `localesHost` and `url` without triggering any requests, using the `setLo
 fetch them.
 
 ```js
-import { setUrl, setLocalesHost, requestResources } from '@fork-cells/localize';
+import { setUrl, setLocalesHost, requestResources } from '@andresbitrian/localize';
 
 setLocalesHost('base/path/for/app');
 setUrl('locales/app-locales.json');
@@ -359,7 +359,7 @@ set `useBundles` to true to merge the new resources with the previous ones inste
 them.
 
 ```js
-import { setUrl, setLocalesHost, requestResources, setUseBundles } from '@fork-cells/localize';
+import { setUrl, setLocalesHost, requestResources, setUseBundles } from '@andresbitrian/localize';
 
 setUseBundles(true);
 setLocalesHost('base/path/for/app');

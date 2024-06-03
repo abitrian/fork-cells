@@ -93,7 +93,7 @@ Exceptions:
 ## Committing Your Changes
 
 Commit messages must follow the [conventional commit format](https://www.conventionalcommits.org/en/v1.0.0/).
-Open Cells uses the package name as the scope. So for example if you fix a _terrible bug_ in the package `@fork-cells/core`, the commit message should look like this:
+Open Cells uses the package name as the scope. So for example if you fix a _terrible bug_ in the package `@andresbitrian/core`, the commit message should look like this:
 
 ```sh
 fix(core): fix terrible bug

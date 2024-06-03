@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { plugCellsCore } from '@fork-cells/core-plugin';
+import { plugCellsCore } from '@andresbitrian/core-plugin';
 export class ElementController {
   constructor(host) {
     this.subscriptions = [];
