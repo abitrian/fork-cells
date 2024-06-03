@@ -5,7 +5,7 @@ Generator to scaffold ready-to-go Cells Applications.
 ## Usage
 
 ```sh
-npm init @open-cells/app
+npm init @fork-cells/app
 ```
 
 And then follow the menu instructions!

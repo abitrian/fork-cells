@@ -12,7 +12,7 @@ export class DemoComponent extends LitElement {
 
   render() {
     return html`
-      <h2>Component using \`t\` function from '@open-cells/localize' module</h2>
+      <h2>Component using \`t\` function from '@fork-cells/localize' module</h2>
 
       <p>
         Use \`updateWhenLocaleResourcesChange(this)\` in constructor to ensure component updates

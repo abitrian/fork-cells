@@ -1,4 +1,4 @@
-import { getConfig } from '@open-cells/core';
+import { getConfig } from '@fork-cells/core';
 
 const {
   appConfig: {

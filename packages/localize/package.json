@@ -1,5 +1,5 @@
 {
-  "name": "@open-cells/localize",
+  "name": "@fork-cells/localize",
   "version": "1.0.0",
   "description": "Provides internationalization, localization and formatting capabilities for Web Components through the intl messageformat library.",
   "keywords": [

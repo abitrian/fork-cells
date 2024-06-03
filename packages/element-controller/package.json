@@ -1,5 +1,5 @@
 {
-  "name": "@open-cells/element-controller",
+  "name": "@fork-cells/element-controller",
   "version": "1.0.0-beta.3",
   "main": "index.js",
   "types": "types/index.d.ts",
@@ -11,7 +11,7 @@
   "license": "Apache-2.0",
   "description": "",
   "dependencies": {
-    "@open-cells/core-plugin": "^1.0.0"
+    "@fork-cells/core-plugin": "^1.0.0"
   },
   "files": [
     "/src/",

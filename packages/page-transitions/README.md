@@ -7,7 +7,7 @@
 Installation using NPM
 
 ```bash
-npm install @open-cells/page-transitions
+npm install @fork-cells/page-transitions
 ```
 
 ### Entry points & exports
@@ -33,7 +33,7 @@ Import and add the mixin to a class:
 
 ```js
 import { LitElement } from 'lit';
-import { PageTransitionsMixin } from '@open-cells/page-transitions';
+import { PageTransitionsMixin } from '@fork-cells/page-transitions';
 
 class ExampleElement extends PageTransitionsMixin(LitElement) {
   ...

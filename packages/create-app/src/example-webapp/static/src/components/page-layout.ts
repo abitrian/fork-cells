@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
-import { ElementController } from '@open-cells/element-controller';
+import { ElementController } from '@fork-cells/element-controller';
 import { styles } from './page-layout.css';
 
 @customElement('page-layout')

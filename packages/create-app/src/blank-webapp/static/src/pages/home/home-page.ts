@@ -1,5 +1,5 @@
 import { html, LitElement } from 'lit';
-import { PageController } from '@open-cells/page-controller';
+import { PageController } from '@fork-cells/page-controller';
 import { customElement } from 'lit/decorators.js';
 
 @customElement('home-page')

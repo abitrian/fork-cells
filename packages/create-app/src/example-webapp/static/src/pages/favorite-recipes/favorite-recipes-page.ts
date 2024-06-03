@@ -1,6 +1,6 @@
 import { html, LitElement } from 'lit';
-import { PageController } from '@open-cells/page-controller';
-import { PageTransitionsMixin } from '@open-cells/page-transitions';
+import { PageController } from '@fork-cells/page-controller';
+import { PageTransitionsMixin } from '@fork-cells/page-transitions';
 import { customElement, state } from 'lit/decorators.js';
 import '@material/web/button/outlined-button.js';
 import '@material/web/icon/icon.js';

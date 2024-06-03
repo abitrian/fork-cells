@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { ElementController } from '@open-cells/element-controller';
+import { ElementController } from '@fork-cells/element-controller';
 
 export class PageController extends ElementController {
   static get BRIDGE_PAGE_PRIVATE_CHANNEL_PREFIX() {

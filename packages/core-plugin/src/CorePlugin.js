@@ -27,7 +27,7 @@ import {
   getCurrentRoute,
   updateSubroute,
   backStep,
-} from '@open-cells/core';
+} from '@fork-cells/core';
 
 const services = {};
 

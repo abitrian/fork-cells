@@ -1,12 +1,12 @@
-import { startApp } from '@open-cells/core';
+import { startApp } from '@fork-cells/core';
 import { LitElement, html } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
-import { ElementController } from '@open-cells/element-controller';
+import { ElementController } from '@fork-cells/element-controller';
 import { routes } from '../router/routes.js';
 import { styles } from './app-index.css.js';
 import '@material/web/icon/icon.js';
 import '@material/web/iconbutton/outlined-icon-button.js';
-import '@open-cells/page-transitions/page-transition-head-styles.js';
+import '@fork-cells/page-transitions/page-transition-head-styles.js';
 import { appConfig } from '../config/app.config.js';
 
 startApp({

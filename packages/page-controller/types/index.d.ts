@@ -1,3 +1,3 @@
-import { ElementController } from '@open-cells/element-controller/types';
+import { ElementController } from '@fork-cells/element-controller/types';
 
 export declare class PageController extends ElementController {}
