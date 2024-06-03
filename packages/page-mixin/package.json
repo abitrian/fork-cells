@@ -15,5 +15,8 @@
     "lit-element": "^2.0.0",
     "@open-wc/testing": "^3.0.0",
     "sinon": "^7.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

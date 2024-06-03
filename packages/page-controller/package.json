@@ -17,5 +17,8 @@
   "dependencies": {
     "@fork-cells/element-controller": "^1.0.0"
   },
-  "description": ""
+  "description": "",
+  "publishConfig": {
+    "access": "public"
+  }
 }
