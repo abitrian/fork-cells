@@ -19,42 +19,42 @@ jobs:
           npm ci 
           npm run build --if-present
       - name: Publish core package on NPM.js
-        working-directory: ./core
+        working-directory: ./packages/core
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
       - name: Publish core-plugin package on NPM.js
-        working-directory: ./core-plugin
+        working-directory: ./packages/core-plugin
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
       - name: Publish element-controller package on NPM.js
-        working-directory: ./element-controller
+        working-directory: ./packages/element-controller
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
       - name: Publish page-controller package on NPM.js
-        working-directory: ./page-controller
+        working-directory: ./packages/page-controller
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
       - name: Publish page-mixin package on NPM.js
-        working-directory: ./page-mixin
+        working-directory: ./packages/page-mixin
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
       - name: Publish page-transitions package on NPM.js
-        working-directory: ./page-transitions
+        working-directory: ./packages/page-transitions
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
       - name: Publish localize package on NPM.js
-        working-directory: ./localize
+        working-directory: ./packages/localize
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
       - name: Publish create-app package on NPM.js
-        working-directory: ./create-app
+        working-directory: ./packages/create-app
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
