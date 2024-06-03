@@ -1,6 +1,23 @@
+/*
+ * Copyright 2024 Bilbao Vizcaya Argentaria, S.A.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 import { expect } from '@esm-bundle/chai';
 import { Bridge } from '../../src/bridge.js';
 import { eventManager } from '../../src/manager/events.js';
+import { BRIDGE_CHANNEL_PREFIX } from '../../src/constants.js';
 
 class MockWebComponent extends HTMLElement {
   constructor() {
@@ -144,7 +161,7 @@ describe('Bridge', () => {
     // });
   });
 
-  describe('#private channel __bridge_app', () => {
+  describe('#private context app channel', () => {
     it('should update the app channel', async () => {
       const p = navigationComplete();
       bridge.navigate('home');
@@ -157,7 +174,7 @@ describe('Bridge', () => {
         interceptorContext: {},
         currentRoute: { name: 'home', params: {}, query: {}, hashPath: '/', subroute: undefined },
       };
-      bridge.registerInConnection('__bridge_app', elemStub, evt => {
+      bridge.registerInConnection(`${BRIDGE_CHANNEL_PREFIX}_app`, elemStub, evt => {
         elemStub.app = evt.value;
       });
 
@@ -173,10 +190,10 @@ describe('Bridge', () => {
 
       const elemStub = document.createElement('some-element');
 
-      bridge.registerInConnection('__bridge_page_home', elemStub, evt => {
+      bridge.registerInConnection(`${BRIDGE_CHANNEL_PREFIX}_page_home`, elemStub, evt => {
         elemStub.home = evt.value;
       });
-      bridge.registerInConnection('__bridge_page_category', elemStub, evt => {
+      bridge.registerInConnection(`${BRIDGE_CHANNEL_PREFIX}_page_category`, elemStub, evt => {
         elemStub.category = evt.value;
       });
 

@@ -1,3 +1,21 @@
+/*
+ * Copyright 2024 Bilbao Vizcaya Argentaria, S.A.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import { BRIDGE_CHANNEL_PREFIX } from '../constants';
+
 /**
  * @typedef {import('../../types').Bridge} Bridge
  *
@@ -60,9 +78,10 @@ export class PostMessageManager {
 
   /**
    * Handles the postMessage events sent to this window from its parent. It transforms them into
-   * channels __bridge_post_message_{your-event-name} including the payload, to do so the
-   * postMessage must be: { "event" : "your-event-name", "detail" : <any> } Creates and listens to
-   * the private channel __bridge_ch_send_post_message to send postMessages to parent window.
+   * channels [BRIDGE_CHANNEL_PREFIX]_post_message_{your-event-name} including the payload, to do so
+   * the postMessage must be: { "event" : "your-event-name", "detail" : <any> } Creates and listens
+   * to the private channel [BRIDGE_CHANNEL_PREFIX]_ch_send_post_message to send postMessages to
+   * parent window.
    */
   setupPostMessages() {
     if (this.enabled) {
@@ -74,7 +93,7 @@ export class PostMessageManager {
         }
       });
       // @ts-ignore
-      this._sendPostMessage({ event: '__bridge-ready' });
+      this._sendPostMessage({ event: `${BRIDGE_CHANNEL_PREFIX}-ready` });
       this.bridgeChannelManager
         .getBridgeChannel('send_post_message')
         // @ts-ignore

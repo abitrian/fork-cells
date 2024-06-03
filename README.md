@@ -1,17 +1,14 @@
-<p align="center">
-  <img
-    width="120rem"
-    src="./assets/logo.svg"
-    alt="Open Cells"
-  />
-</p>
-<h1 align="center">Open Cells</h1>
+<div align="center">
+  <img width="120rem" src="./assets/logo.svg" alt="Open Cells"/>
+  <h1>Open Cells</h1>
+</div>
 
 _A framework to build SPA web applications based on web components and web standards_.
 
 Léelo en [Español](./README.es.md)
 
 **Open Cells** is made to be light, easy to use and will help you to create SPAs faster. To do so it will handle the basics of every SPA:
+
 - Routing.
 - State management, based on a pub-sub reactive pattern implementing RxJS.
 - App Configuration.
@@ -27,44 +24,10 @@ In this mono repo we have the modules that builds up Open Cells:
 - **`element-controller`**: provides the components the mechanisms to use the core API (navigation, state, configuration)
 - **`page-controller`**: extends `element-controller` and provides lifecycle hooks to handle page loading.
 
-## Starting with Open Cells
-><br>
-> While Open Cells is in preview we've made a way of creating and trying application in a simple way. You just have to clone this repository and once inside the folder of the project run:
->
-> ```sh
->npm install
->npm run create:preview
->```
->
-> This will run an application generator. It'll ask you if you want an empty application (minimal sample) or a full sample application (cooking recipes application).
->
-> After choosing the kind of application, you'll have to give it a name, ie. `my-app` and confirm the creation.
->
->The generator will create a folder inside `packages/example` with the given name, ie. `packages/example/my-app`.
->
->Now you can go to the application folder and install the dependencies:
->
->```sh
->cd packages/example/my-app
->npm install
->```
-> The tool is already developed to be used once it's published, so it'll advice you to go to my-app folder. But in preview mode you must follow these previous instructions to install the dependencies.
->
-> 👉🏻 As we are using a mono repo, the dependencies from the namespaces `@open-cells` will be resolved within the folder of the mono repo.
->
->Now you can serve and try the application running:
->
->```sh
->npm run start
->```
-><br>
-
-<br/>
-
 To create an application with Open Cells run:
 
-```sh
-npm init @open-cells/app
+```bash
+npx @open-cells/create-app
 ```
 
 You will be asked to enter a name for the application and once you confirm it a folder will be created with the application inside.
@@ -92,40 +55,43 @@ Open Cells won't require an specific folder structure but, it needs for these to
 
 The app created in the previous step follows this structure as a suggestion:
 
-```
--+- src
- |--- components
- |    |
- |    +--- app-index.ts
- |--- pages
- |--- router
- |    |
- |    +--- route.ts
- +- index.html
-```
-
-In `index.html` file you'll find:
-
-- an element with `id`, in which the pages will be rendered.
-
-```html
-<app-index id="app__content"></app-index>
-```
-
-- an import with `app-index.ts` file.
-
-```html
-<script type="module" src="src/components/app-index.ts"></script>
+```treeview
+Root Directory/
+|── package.json
+|── tsconfig.json
+|── index.html
+|── images/
+|   └── favicon.svg
+└── src/
+    |── components/
+    |   |── app-index.ts
+    |   └── app-index.css.js
+    |── pages/
+    |   └── home/
+    |   |   └── home-page.ts
+    |   └── second/
+    |       └── second-page.ts
+    |── css/
+    |   |── home.css
+    |   |── main.css
+    |   └── second.css
+    └── router/
+        └── routes.ts
 ```
 
-Inside this file the application is loaded calling the function `startApp` imported from `@open-cells/core`.
+### App initialization
+
+The `index.html` file is the document in which the app will be mounted on. Its body contains the `<app-index id="app-content">` element that will contain the app pages, and the `<script>` tag that invokes all the Open Cells logic.
+
+The `src/components/app-index.ts` file includes the imports of Open Cells core library and the app initialization.
 
 ```js
 import { startApp } from '@open-cells/core';
+import { routes } from '../router/routes.js';
 
 startApp({
   routes,
-  mainNode: 'app__content',
+  mainNode: 'app-content',
 });
 ```
 
@@ -185,9 +151,7 @@ When a value is published in a channel, this value stays in the channels until a
 #### Key functions
 
 - `publish`: allows to send a value into a channel, where it will stays until another publication is made.
-
 - `subscribe`: allows the components to create a subscription to a channel to receive and react to the published values.
-
 - `unsubscribe`: allows the components to stop the subscription to a channel so it won't be updated with values anymore.
 
 #### Advantages of RxJS
@@ -219,17 +183,11 @@ Open Cells controllers are:
 ### ElementController
 
 - `subscribe(channelName, callback)`: it subscribes to the channel indicated in `channelName`. If the channel doesn't exist, Open Cells will create it at that point. Function `callback` will be called when there is a new state in the channel (a new value is published).
-
 - `unsubscribe(channelName)`: it stops the subscription of the component to the channel `channelName`.
-
 - `publish(channelName, value)`: it publishes `value` in the channel `channelName`.
-
 - `publishOn(channelName, htmlElement, eventName)`: every time the element `htmlElement` dispatches the event `eventName`, the `detail.value` of the event is published on `channelName`.
-
 - `navigate(page, params)`: navigates to `page` passing the parameters `params` (must be a key/value object).
-
 - `backStep()`: navigates to the previous page in the history.
-
 - `getCurrentRoute()` get the information about the current route.
 
 ### PageController
@@ -237,5 +195,4 @@ Open Cells controllers are:
 As extends the ElementController it gets all its functionality and these two hooks:
 
 - `onPageEnter`: page hook that allows the component handle its state when it enters the viewport.
-
 - `onPageLeave`: page hook that allows the component handle its state when it exits the viewport.

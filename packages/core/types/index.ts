@@ -1,4 +1,4 @@
-export {
+export type {
   Component,
   ComponentConnector,
   Connection,
@@ -7,24 +7,40 @@ export {
   CCSubscriptions,
   VNode,
   WCNode,
-  IndexableHTMLElement
-} from "./component-connector";
-export { WCEvent } from "./manager/events";
-export { Channel, PublishableValue } from "./state/channel";
-export { Route, RouteData } from "./route";
-export { Router } from "./router";
-export { Navigation, NavigationWithParams, RoutePage, QueryParams } from "./navigation-stack";
-export {
+  IndexableHTMLElement,
+} from './component-connector';
+export type { WCEvent } from './manager/events';
+export type { Channel, PublishableValue } from './state/channel';
+export type { Route, RouteData } from './route';
+export type { Router } from './router';
+export type { Navigation, NavigationWithParams, RoutePage, QueryParams } from './navigation-stack';
+export type {
   AugmentedFunction,
   Binding,
   CallBackFunction,
   NodeChannelRecord,
   WCSubscriptionDetail,
   WrappedEventForPublication,
-  WCSubscription
-} from "./state/subscriptor";
-export { PostMessageEvent } from "./manager/post-message";
-export { Dictionary } from "./manager/storage";
-export { TemplateConfig, TemplateManager, TemplateManagerConfig, TemplateNode, TemplateSpec } from "./manager/template";
-export { Bridge, BridgeAPI, CellsConfig, RouteMap, RouterConfig, ParsedRoute } from "./bridge";
-export { EventEmitter } from "./event-emitter";
+  WCSubscription,
+} from './state/subscriptor';
+export type { PostMessageEvent } from './manager/post-message';
+export type { Dictionary } from './manager/storage';
+export type {
+  TemplateConfig,
+  TemplateManager,
+  TemplateManagerConfig,
+  TemplateNode,
+  TemplateSpec,
+} from './manager/template';
+export type {
+  Bridge,
+  BridgeAPI,
+  CellsConfig,
+  EventSubscription,
+  InterceptorFunction,
+  ParsedRoute,
+  RouteDefinition,
+  RouteMap,
+} from './bridge';
+export { EventEmitter } from './event-emitter';
+

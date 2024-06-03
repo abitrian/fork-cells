@@ -1,3 +1,19 @@
+/*
+ * Copyright 2024 Bilbao Vizcaya Argentaria, S.A.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 import { Route } from './route';
 import { Subscription, fromEvent, merge } from 'rxjs';
 import { distinctUntilChanged, map, startWith, filter } from 'rxjs/operators';
@@ -9,8 +25,6 @@ import { Constants } from './constants';
  * @typedef {import('../types').Navigation} Navigation
  *
  * @typedef {import('../types').QueryParams} QueryParams
- *
- * @typedef {import('../types').RouterConfig} RouterConfig
  *
  * @typedef {import('../types').ParsedRoute} ParsedRoute
  *
@@ -308,7 +322,7 @@ export class Router {
    * @param {string | string[]} patterns - The patterns associated with the route.
    * @param {Function} action - The action to be executed when the route is matched.
    * @param {boolean} notFound - Indicates whether the route is the 404 page. Default is `false`.
-   * @param {string | undefined} component -  the name of component. 
+   * @param {string | undefined} component - The name of component.
    * @returns {Route} - The newly added route.
    */
   addRoute(name, patterns, action, notFound, component) {
