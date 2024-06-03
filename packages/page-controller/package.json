@@ -1,6 +1,6 @@
 {
   "name": "@fork-cells/page-controller",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0",
   "scripts": {
     "build": "echo \"Building page...\""
   },
@@ -15,7 +15,7 @@
   ],
   "main": "index.js",
   "dependencies": {
-    "@fork-cells/element-controller": "^1.0.0-beta.3"
+    "@fork-cells/element-controller": "^1.0.0"
   },
   "description": ""
 }

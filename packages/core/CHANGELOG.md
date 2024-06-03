@@ -1,6 +1,6 @@
-# Cells create-app
+# @fork-cells/core
 
-## 0.15.0
+## 1.0.0
 
 ### Minor Changes
 

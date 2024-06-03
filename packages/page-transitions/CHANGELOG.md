@@ -1,6 +1,6 @@
-# Cells create-app
+# @fork-cells/page-transitions
 
-## 0.15.0
+## 1.0.0
 
 ### Minor Changes
 

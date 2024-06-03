@@ -1,6 +1,6 @@
-# Cells create-app
+# @fork-cells/localize
 
-## 0.15.0
+## 1.1.0
 
 ### Minor Changes
 
